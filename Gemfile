@@ -19,6 +19,8 @@ group :development do
   gem 'meta_request', '0.2.1'
 end
 
+gem 'filepicker-rails'
+
 group :assets do
   gem "therubyracer"
   gem 'less-rails' #,   '~> 3.2.3'
