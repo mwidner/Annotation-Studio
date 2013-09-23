@@ -15,3 +15,6 @@ config/database.yml
 /config/application.yml
 public/system
 *.p12
+.floo
+.flooignore
+.sublime-project
