@@ -11,10 +11,20 @@ config/application.yml
 db/backups/*
 config/database.yml
 
-# Ignore application configuration
+# Ignore application & database configuration
 /config/application.yml
-public/system
+/config/database.yml
+vendor/assets/javascripts/_attic
+vendor/assets/stylesheets/_attic
+Gemfile.lock.temp
 *.p12
-.floo
-.flooignore
-.sublime-project
+pg_upgrade_utility.log
+b022.dump
+loadable_libraries.txt
+pg_upgrade_dump_all.sql
+pg_upgrade_dump_db.sql
+pg_upgrade_dump_globals.sql
+pg_upgrade_internal.log
+pg_upgrade_restore.log
+pg_upgrade_server.log
+public/system

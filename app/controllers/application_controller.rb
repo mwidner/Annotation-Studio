@@ -3,9 +3,9 @@ class ApplicationController < ActionController::Base
 
   before_filter :authenticate_user!
   before_filter :prepare_for_mobile
-  
+
   # add_breadcrumb :index, :root_path
-  
+
   def signed_in?
     @now = DateTime.current().to_time.iso8601
     @jwt = JWT.encode(
@@ -14,7 +14,7 @@ class ApplicationController < ActionController::Base
             'userId' => current_user.email,
             'issuedAt' => @now,
             'ttl' => 86400
-        }, 
+        },
         ENV["API_SECRET"]
     )
     gon.current_user = current_user
@@ -38,8 +38,8 @@ class ApplicationController < ActionController::Base
     if session[:mobile_param]
       session[:mobile_param] == "1"
     else
-      request.user_agent && request.user_agent.downcase =~ /mobile|iphone|webos|android|blackberry|midp|cldc/ && request.user_agent.downcase !~ /ipad/
-   end
+      request.user_agent =~ /Mobile|webOS/
+    end
   end
   helper_method :mobile_device?
 
@@ -47,5 +47,5 @@ class ApplicationController < ActionController::Base
     session[:mobile_param] = params[:mobile] if params[:mobile]
     request.format = :mobile if mobile_device?
   end
- 
+
 end
