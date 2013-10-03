@@ -47,12 +47,12 @@ jQuery(function ($) {
 	// Backbone.history.start({pushState: true, root: window.location})
 
 	var loadOptions = {
-		'limit': 5,
+		'limit': 100,
 		'groups': "<%= current_user.rep_group_list %>".split(/, /),
 		'subgroups': "<%= current_user.rep_subgroup_list %>".split(/, /),
 		'host': location.host,
 		'user': "<%= current_user.email %>",
-		'mode': 'user',
+		'mode': 'groups',
 		'context': 'search',
 	};
 	widget.listAnnotations(loadOptions, endpoint, token);
