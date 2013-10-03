@@ -23,12 +23,12 @@ end
 
 group :assets do
   gem "therubyracer"
-  gem 'less-rails' #,   '~> 3.2.3'
   gem 'sass-rails' #,   '~> 3.2.3'
   gem 'coffee-rails' #, '~> 3.2.1'
   gem 'uglifier' #, '>= 1.0.3'
 end
 
+gem 'less-rails' #,   '~> 3.2.3'
 gem "twitter-bootstrap-rails" # https://github.com/seyhunak/twitter-bootstrap-rails/issues/401 ?
 
 gem 'jquery-rails' #,   '~> 2.1.4'
