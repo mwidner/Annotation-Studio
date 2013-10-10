@@ -1,8 +1,8 @@
 source 'https://rubygems.org'
 
-ruby '1.9.3'
+ruby '2.0.0'
 
-gem 'rails', '>= 3.2.11'
+gem 'rails'#, '>= 3.2.14'
 gem 'unicorn'
 
 gem 'pg'
@@ -12,7 +12,7 @@ gem 'heroku-true-relic'
 gem 'devise', '>= 2.2.2'
 gem 'cancan'
 gem 'repertoire-groups', '0.0.1', :path => 'vendor/repertoire-groups-0.0.1' #, :require => 'repertoire-groups'
-gem 'acts-as-taggable-on', '~> 2.3.3'
+gem 'acts-as-taggable-on'#, '~> 2.3.3'
 gem "friendly_id", ">= 4.0.9"
 gem "babosa"
 
@@ -38,11 +38,10 @@ gem "jwt" #, "~> 0.1.4"
 gem "rabl"
 gem "gon"
 
-gem 'activeadmin'
+gem "polyamorous"
+gem "activeadmin", git: "https://github.com/gregbell/active_admin"
 gem 'sass-rails'
-gem "meta_search",    '>= 1.1.0.pre'
 
 gem "figaro"
 
-gem 'will_paginate', '> 3.0'
 gem 'intercom-rails'

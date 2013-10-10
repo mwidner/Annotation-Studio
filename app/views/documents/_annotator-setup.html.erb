@@ -174,7 +174,7 @@ jQuery(function ($) {
 		subscriber.plugins.Store.loadAnnotationsFromSearch(loadOptions);
 	});
 	$('#groupview').on('click', function (e) {
-		$('#spinnermodal').modal('show');
+		// $('#spinnermodal').modal('show');
 		console.info('Clicked groupview');
 		$('.viewchoice').removeClass("active");
 		var hilites = $('.annotator-hl');
@@ -192,7 +192,7 @@ jQuery(function ($) {
 		subscriber.plugins.Store.loadAnnotationsFromSearch(loadOptions);
 	});
 	$('#classview').on('click', function (e) {
-		$('#spinnermodal').modal('show');
+		// $('#spinnermodal').modal('show');
 		console.info('Clicked classview');
 		$('.viewchoice').removeClass("active");
 		var hilites = $('.annotator-hl');
@@ -212,7 +212,7 @@ jQuery(function ($) {
 
 	<%# if current_user.has_role?(:admin) %>
 	$('#adminview').on('click', function (e) {
-		$('#spinnermodal').modal('show');
+		// $('#spinnermodal').modal('show');
 		console.info('Clicked adminview');
 		$('.viewchoice').removeClass("active");
 		var hilites = $('.annotator-hl');
