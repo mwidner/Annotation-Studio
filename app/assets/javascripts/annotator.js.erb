@@ -20,7 +20,7 @@ jQuery(function ($) {
 	studio.annotator('addPlugin', 'Auth', {
 		token: '<%= @jwt %>'
 	});
-	
+
 	// how to interact with the backend store
 	studio.annotator('addPlugin', 'Store', {
 		// prefix: 'http://annotations.mit.edu/api',
@@ -36,18 +36,18 @@ jQuery(function ($) {
 		},
 		loadFromSearch: {
 			'limit': 1000,
-			
+
 			// Loads group annotations
 			'user[groups]': groups,
 
 			// Limits annotations to this document
 			'uri': [location.protocol, '//', location.host, location.pathname].join(''),
-			
+
 			// Limits annotations to this user unless user is an admin
 			<% unless current_user.has_role?(:admin) %>
 			'user[id]': "<%= current_user.id %>",
 			<% end %>
-			
+
 		}
 	});
 

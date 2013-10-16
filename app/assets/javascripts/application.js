@@ -22,11 +22,5 @@
 //= require Math.uuid
 //= require moment.min
 //= require annotator.min
-//= require annotator.filter.min
-//= require annotator.store.min
-//= require annotator.auth.min
-//= require annotator.permissions.min
-//= require annotator.tags.min
-//= require annotator.markdown.min
-//= require annotator.unsupported.min
+//= require annotator-mitpermissions
 //= require annotorious.okfn.js

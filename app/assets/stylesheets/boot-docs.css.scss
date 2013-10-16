@@ -189,6 +189,10 @@ a.texttitle {
 	display:inline;
 }
 
+#permissions-select select {
+	max-height: 5px;
+}
+
 /* Sidebar, see: http://stackoverflow.com/questions/9350818/fixed-sidebar-navigation-in-fluid-twitter-bootstrap-2-0 */
 /*.sidebar-nav {
     position:fixed;
