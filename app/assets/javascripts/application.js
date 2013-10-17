@@ -21,6 +21,9 @@
 //= require json2.min
 //= require Math.uuid
 //= require moment.min
+//= require tinymce
 //= require annotator.min
 //= require annotator-mitpermissions
+//= require richText-annotator
+//= require share-annotator
 //= require annotorious.okfn.js
