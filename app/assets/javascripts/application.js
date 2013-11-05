@@ -12,6 +12,7 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require jquery.ui.all
 //= require twitter/bootstrap
 //= require redactor-rails/redactor.min
 //= require redactor-config
@@ -21,9 +22,13 @@
 //= require json2.min
 //= require Math.uuid
 //= require moment.min
-//= require tinymce
+//= require tinymce/tinymce.min
 //= require annotator.min
-//= require annotator-mitpermissions
+//= require mitPermissions-annotator
 //= require richText-annotator
-//= require share-annotator
 //= require annotorious.okfn.js
+//= require underscore
+//= require backbone
+//= require mustache
+//= require visualsearch
+//= require vs-init

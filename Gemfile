@@ -32,6 +32,7 @@ end
 gem "twitter-bootstrap-rails" # https://github.com/seyhunak/twitter-bootstrap-rails/issues/401 ?
 
 gem 'jquery-rails',   '~> 3.0.4'
+gem 'jquery-ui-rails'
 gem 'redactor-rails', '0.3.2'
 gem 'jbuilder'
 gem "jwt" #, "~> 0.1.4"
@@ -41,8 +42,6 @@ gem "gon"
 gem 'activeadmin'
 gem 'sass-rails'
 gem "meta_search",    '>= 1.1.0.pre'
-
-gem 'tinymce-rails'
 
 gem "figaro"
 

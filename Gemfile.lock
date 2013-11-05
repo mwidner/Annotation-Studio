@@ -99,6 +99,8 @@ GEM
     jquery-rails (3.0.4)
       railties (>= 3.0, < 5.0)
       thor (>= 0.14, < 2.0)
+    jquery-ui-rails (4.1.0)
+      railties (>= 3.1.0)
     json (1.8.0)
     jwt (0.1.8)
       multi_json (>= 1.5)
@@ -186,8 +188,6 @@ GEM
       ref
     thor (0.18.1)
     tilt (1.4.1)
-    tinymce-rails (4.0.8)
-      railties (>= 3.1.1)
     treetop (1.4.12)
       polyglot
       polyglot (>= 0.3.1)
@@ -224,6 +224,7 @@ DEPENDENCIES
   intercom-rails
   jbuilder
   jquery-rails (~> 3.0.4)
+  jquery-ui-rails
   jwt
   less-rails
   meta_request (= 0.2.1)
@@ -237,7 +238,6 @@ DEPENDENCIES
   sass-rails
   sextant
   therubyracer
-  tinymce-rails
   twitter-bootstrap-rails
   uglifier
   unicorn
