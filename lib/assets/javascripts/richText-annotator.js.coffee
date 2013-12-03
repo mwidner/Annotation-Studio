@@ -1,10 +1,8 @@
-# Plugin that renders annotation comments displayed in the Viewer in Markdown.
-# Requires Showdown library to be present in the page when initialised.
 class Annotator.Plugin.RichText extends Annotator.Plugin
-  # Events to be bound to the @element.
+  
   options:
-    editor_enabled: true
-    tinymce:
+    editor_enabled: true # If set to false, only the RichText viewer will be loaded
+    tinymce: # Default configuration
       selector: "li.annotator-item textarea",
       plugins: "media image link code",
       link_list: false,
@@ -23,8 +21,9 @@ class Annotator.Plugin.RichText extends Annotator.Plugin
     #Check that annotator is working
     return unless Annotator.supported()
     
-    #Viewer setup
+    # Viewer setup
     annotator.viewer.addField load: @updateViewer
+    # Check if the editor should be set up
     return unless @options.editor_enabled
 
     #Editor Setup

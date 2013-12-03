@@ -1,0 +1,21 @@
+default:
+  plugins:
+    - media
+    - image
+    - link
+    - code
+    - autosave
+    - paste
+    - searchreplace
+  link_list: false
+  target_list: false
+  rel_list: false
+  menubar: edit format insert tools
+  statusbar: true
+  toolbar_items_size: small
+  extended_valid_elements : iframe[src|frameborder|style|scrolling|class|width|height|name|align|id]
+  toolbar: undo redo | bold italic | link image media | code
+
+annotator-plugin:
+  # not currently using this; instead we instantiate it manually via the RichText plugin
+  selector: li.annotator-item textarea
